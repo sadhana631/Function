@@ -13,8 +13,8 @@ const App = () => (
     <Route exact path="/login" component={Login} />
     <ProtectedRoute exact path="/" component={Home} />
     <ProtectedRoute exact path="/about" component={About} />
-    <ProtectedRoute component={NotFound} />
-  </Switch>  
+    <Route component={NotFound} />
+  </Switch>
 )
 
 export default App
